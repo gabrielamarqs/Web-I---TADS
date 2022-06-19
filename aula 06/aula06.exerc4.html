@@ -8,76 +8,116 @@
 
     <style>
         .container {
-            border: 2px solid black;
+            width: 60%;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .top {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 80% 1fr;
+            text-align: center;
+        }
+        .top img {
+            width: 70%;
+        }
+        .forms {
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: auto auto;
+            text-align: left;
+        }
+        .forms div {
+            border: 1px solid black;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
+        <div class="top">
+            <div><h2>Formulário de inscrição</h2></div>
+            <div><img src="https://www.inscricao2020.com.br/wp-content/uploads/2019/09/ifpr-1.png" alt=""></div>
+        </div>
 
         <form class="formulario">
+        
+        <div class="forms">
 
-            <label>Nome:</label>
-            <input name="nome" type="text">    
+            <div>
+                <label>Nome:</label>
+                <input name="nome" type="text">        
+            </div>
 
-            <label>RG:</label>
-            <input name="rg" type="text">    
+            <div>
+                <label>RG:</label>
+                <input name="rg" type="text">        
+            </div>
 
-            <label>CPF:</label>
-            <input name="cpf" type="text">    
+            <div>
+                <label>CPF:</label>
+                <input name="cpf" type="text">    
+            </div>
             
-            <label>Nome da mãe:</label>
-            <input name="nomem" type="text">        
+            <div>
+                <label>Nome da mãe:</label>
+                <input name="nomem" type="text">            
+            </div>
 
-            <label>Nome do pai:</label>
-            <input name="nomep" type="text">   
+            <div>
+                <label>Nome do pai:</label>
+                <input name="nomep" type="text">       
+            </div>
     
-            <label>Escolaridade:</label>
-            <select name="escola">
-                <option>Ensino Fundamental</option>
-                <option>Ensino Médio</option>
-                <option>Ensino Superior</option>
-            </select>    
+            <div>
+                <label>Escolaridade:</label>
+                <select name="escola">
+                    <option>Ensino Fundamental</option>
+                    <option>Ensino Médio</option>
+                    <option>Ensino Superior</option>
+                </select>        
+            </div>
 
-            <label>Curso</label>
-            <textarea cols="20" rows="4" name="curso">Ensino Fundamental Ensino Médio Superior Completo Pós Graduação
-            </textarea>
+            <div>
+                <label>Curso</label>
+                <textarea cols="20" rows="4" name="curso">Ensino Fundamental Ensino Médio Superior Completo Pós Graduação
+                </textarea>    
+            </div>
 
-            <form>
-                Gostaria de solicitar bolsa de estudos:
-                <input type="checkbox" name="pref" value="ic">Iniciação científica<br>
-                <input type="checkbox" name="pref" value="monit">Monitoria<br>
-                <input type="checkbox" name="pref" value="est">Estágio<br>
-            </form>
+            <div>
+                <form>
+                    Gostaria de solicitar bolsa de estudos:<br>
+                    <input type="checkbox" name="pref" value="ic">Iniciação científica<br>
+                    <input type="checkbox" name="pref" value="monit">Monitoria<br>
+                    <input type="checkbox" name="pref" value="est">Estágio<br>
+                </form>    
+            </div>
 
+            <div>
+                <label>Email:</label>
+                <input name="email" type="text">@ifpr.edu.br        
+            </div>
 
-            <label>Email:</label>
-            <input name="email" type="text">@ifpr.edu.br    
+            <div>
+                <label for="senha">senha</label>
+                <input type="password" name="pass">    
+            </div>
 
-            <label for="senha">senha</label>
-            <input type="pass" type="password">
+            <div>
+                <form>
+                    Escolha o turno do curso: <br>
+                    <input type="radio" name="pref" value="diu">Diurno
+                    <input type="radio" name="pref" value="vesp">Vespertino
+                    <input type="radio" name="pref" value="not">Noturno
+                </form>    
+            </div>
 
-            <label for="turno"></label>
-            <form>
-                Escolha o turno do curso:
-                <input type="radio" name="pref" value="diu">Diurno<br>
-                <input type="radio" name="pref" value="vesp">Vespertino<br>
-                <input type="radio" name="pref" value="not">Noturno<br>
-            </form>
-
-            <button>Enviar</button>
-
-
-
-
-
-
+            <div>
+                <button>Enviar</button>
+            </div>
+        </div>
 
         </form>
-    </div>
-    </div>
-    
+    </main>
+
 </body>
 </html>
