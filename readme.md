@@ -8,4 +8,8 @@
 
 - Aula 6: aula sobre formulários - HTML, CSS
   - grid-layout, form, label, input, etc; 
+- Aula 7: javascript
+  - alguns exercicios iniciais sobre javascript 
+    - (com dificuldade no exercício exerc02.3)
+
 
